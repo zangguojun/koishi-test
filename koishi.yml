@@ -1,0 +1,35 @@
+port: 5140
+maxPort: 5149
+logger:
+  levels:
+    novelai: 3
+    rss: 3
+plugins:
+  group:basic:
+    market:
+      search:
+        endpoint: ${{ env.GITHUB_CONTENT_MIRROR }}/koishijs/registry/dist/index.json
+    adapter-onebot:
+      selfId: ${{ env.QQ }}
+      protocol: ws
+      endpoint: ${{ env.WS }}
+      token: ${{ env.TOKEN }}
+    database-mysql:
+      host: ${{ env.MYSQL_HOST }}
+      password: ${{ env.MYSQL_PWD }}
+    console:
+      open: false
+  group:pre:
+    ~help:
+      shortcut: false
+      options: false
+    status: {}
+    dataview: {}
+    schedule: {}
+    sandbox: {}
+    rss: {}
+    novelai:
+      token: >-
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlgzM0Vjc2d4eWhtVDRMN1pWcmx6NSIsIm5jIjoiMXNFTWRJT3l3OXR0cFVSVlVWS3hSIiwiaWF0IjoxNjY1MTI3MTIyLCJleHAiOjE2Njc3MTkxMjJ9.Jh8vdAIiRd89I7g69L-LThaIZ7DNyHg5zy7NNzk8jWM
+  group:custom:
+    chat: {}
