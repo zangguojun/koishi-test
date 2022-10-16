@@ -1,6 +1,9 @@
 lib
 dist
 accounts
+.vite
+logs
+
 
 node_modules
 npm-debug.log

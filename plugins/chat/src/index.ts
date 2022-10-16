@@ -9,7 +9,7 @@ export interface Config {}
 export const Config: Schema<Config> = Schema.object({});
 
 export function apply(ctx: Context) {
-  ctx.guild(...['123','#']).middleware(async (session: Session, next) => {
+  ctx.guild(...['532250819','#']).middleware(async (session: Session, next) => {
     const {
       bot,
       content,
