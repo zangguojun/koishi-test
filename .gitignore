@@ -3,7 +3,7 @@ dist
 accounts
 .vite
 logs
-
+.env
 
 node_modules
 npm-debug.log
