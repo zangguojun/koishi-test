@@ -54,6 +54,10 @@
     "@koishijs/plugin-sandbox": "^2.3.2",
     "@koishijs/plugin-status": "^6.1.5",
     "@koishijs/plugin-suggest": "^1.1.5",
-    "koishi": "^4.9.5"
+    "ffcreator": "^6.7.5",
+    "image-size": "^1.0.2",
+    "koishi": "^4.9.5",
+    "lodash": "^4.17.21",
+    "tmp": "^0.2.1"
   }
 }
